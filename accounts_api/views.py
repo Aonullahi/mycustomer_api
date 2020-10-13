@@ -91,7 +91,7 @@ def api_root(request, format=None):
     Providing endpoints for each registered User and their Customers. 
     1) Register (click on the users url)
     2) Login
-    3) Add Customers
+    3) Add Customers (must be logged in to add or view your customers)
     '''
     return Response({
         'users': reverse('user-list', request=request, format=format),
